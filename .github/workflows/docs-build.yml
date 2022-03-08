@@ -27,13 +27,7 @@ jobs:
 
       - name: Build docs
         run: python3 .github/workflows/docs-build.py
-      - name: Check for changes
-        run: git status
-      - name: Stage changed files
-        run: git add .
-      - name: Commit changed files
-        run: git commit -m "Automatic documentation build"
-      - name: Fetch from main
-        run: git fetch origin main
-      - name: Push code to main
-        run: git push origin HEAD:main 
+    
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic documentation build
