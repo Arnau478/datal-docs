@@ -3,7 +3,7 @@ import markdown
 
 root_path = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../.."))
 src_path = os.path.join(root_path, "src")
-doc_path = os.path.join(root_path, "doc")
+doc_path = os.path.join(root_path, "docs")
 tmp_path = os.path.join(root_path, "tmp")
 
 if(os.path.isdir(tmp_path)):
