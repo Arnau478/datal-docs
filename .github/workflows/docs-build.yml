@@ -42,7 +42,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     needs: check_source
-    if: check_source.check.outputs.run_build == 'true'
+    if: needs.check_source.outputs.run_build == 'true'
 
     steps:
       - uses: actions/checkout@v2
