@@ -1,2 +1,2 @@
 # Datal Docs
-Example doc
+This is an example
